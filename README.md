@@ -1,2 +1,2 @@
-# Curso-de-Desenvolvimento-Web
-Trybe
+# Trybe
+Curso de Desenvolvimento Web

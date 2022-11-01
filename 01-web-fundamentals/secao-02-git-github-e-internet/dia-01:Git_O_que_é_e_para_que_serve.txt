@@ -1,0 +1,48 @@
+Git é um sistema de controle de versãoonde é possível salvar várias versões de um projeto e caso aconteça algum imprevisto, consegue acessar cada uma dessas versões.
+
+Quando se fala em versão, será uma pasta que conterá o projeto. Nesse sentido, a partir da pasta será possível criar versões ou branches dela.
+
+Repositório local: é o repositório no seu computador, que pode ser baixado da internet ou criado local.
+    • Repositório remoto: é o repositório que está acessível na internet em uma plataforma de hospedagem de código, como por exemplo, o GitHub.
+
+
+Benefícios: versionamento, centralização dos arquivo, possibilidade de trabalhar em equipe.
+
+3 conceitos principais conceitos aplicados ao GIT:
+    • Ramificação (branch);
+    • Captura de mudanças (commit);
+    • Mesclagem (merge);
+A ramificação funciona como braços do projeto principal “branch main”.
+Instalando o git 
+sudo apt-get install git-all
+git –version → Deve ser parecida com git version 2.32.1 (Apple Git-133)
+
+Caso você não possua o brew instalado: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+Criando um repositório:
+Passo-a-passo:
+- Crie uma pasta no seu computador seguindo os comandos:
+ls: verifica as pastas e arquivos que estão naquele caminho
+cd nome-da-pasta: acessa a pasta
+mkdir: cria uma pasta
+touch: cria um arquivo novo
+- Inicie o repositório git com o comando git init
+- Troque o nome da branch principal para main
+Initialized empty Git repository in /Users/leticia/Desktop/meu-primeiro-repositorio-git/.git/
+- Renomeie a branch atual para main com o comando: git branch -m main
+- Configure o nome main com o comando git config --global init.defaultBranch main
+-Verifique o status do repositório com git status
+- Crie um arquivo chamado README.md
+- Abra o seu repositório no VSCode
+- git commit -m "Cria README.md"
+- Crie uma branch nova com git checkout -b nome-da-branch
+git checkout -b atualiza-readme
+- Realize o merge na branch main
+Acesse a branch main com o comando: git checkout main;
+      Digite o comando git merge nome-da-branch, onde nome-da-branch é o nome que você deu para a sua branch. Por exemplo: git merge atualiza-readme
+
+
+
+
+
+

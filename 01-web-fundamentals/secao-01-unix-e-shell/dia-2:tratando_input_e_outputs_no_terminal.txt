@@ -1,0 +1,97 @@
+INPUT: O comando tem como função inserir valores para determinado arquivo, representada pelo sinal >.
+
+Principais comandos do comando relacionados a inserção de valores:
+Inserir valor: cat
+Exibir arquivo: cat <nome_do_arquivo>
+Inserir valor direto na pasta <nome_do_arquivo>
+Inserir valor adicional na pasta <nome_do_arquivo>
+Unir valores de pastas diferentes: cat <nome_do_arquivo>  <nome_do_arquivo> > <nome_do_arquivo>
+
+Output: Não tem como função a alteração de dados, mas sim a saída de dados, simbolizada pelo sinal < e | (pipe).
+
+Manipulção dos valores:
+Ordem alfabética: sort < 
+Enviar para: | (pipe)
+
+Permissões: 
+Who: Para saber quais as pessoas que tem acesso ao terminal, o comando “who” traz todas as informações daqueles que possuem permissões.
+Ls -l: O comando Ls -l discrimina todas as permissões de cada usuário.
+
+Tipos de permissões
+r: leitura  
+w: editar
+x: permite acessar pelo cd
+-: arquivo comum
+d: diretório
+
+rwx = 111 ( 7 | Acesso Total )
+r-- = 100 ( 4 | Somente Leitura )
+-w- = 010 ( 2 | Somente Escrita )
+--x = 001 ( 1 | Somente Execução )
+rw- = 110 ( 6 | Somente Leitura e Escrita )
+r-x = 101 ( 5 | Somente Leitura e Execução )
+-wx = 011 ( 3 | Somente Escrita e Execução )
+--- = 000 ( 0 | Todos Acessos Negados )
+
+Processos: Assim como é possível listar e manipular permissões também é possível manipular processos.  
+
+Estágios dos processos: Execução, backgroud ou suspenso.
+
+Principais comandos para suporte multiprocessos:
+
+ps: comando para lista de processos sendo executados.
+Jobs: listas processos
+- Sleep: interrompe o processos
+- Sleep (tempo) &: Para deixar o processo em backgroud
+O operador & permite a execução de um processo em  background. Para que a saída de um comando seja a entrada de outro, podemos utilizar o operador |.
+- ctrolZ para suspender sleep
+- fg %(n da lista) para colocar em forgroud, ou seja, tirar do estado suspenso para em execução.
+- bg para colocar em backgroud
+- ctrolc encerra um processo em execução.
+- kill %(n da lista) para eliminar processos em backgroud
+- kill (n PID) é possível excluir o processo pelo próprio n. do processo.
+   
+  
+
+Outros comandos
+
+# Para listar todos os arquivos que terminam em .txt
+find . -name "*.txt"
+
+# Para localizar todos os diretórios
+find . -type d
+
+# Para localizar todos os arquivos
+find . -type f
+
+# Localizar tanto arquivos quanto diretórios que comecem
+# por algum trecho
+find ./teste -name "exemplo*"
+# Resultado
+./teste/exemplo.txt
+./teste/exemplo
+
+# Localizar somente arquivos que comecem por algum trecho
+find ./teste -type f -name "exemplo*"
+# Resultado
+./teste/exemplo.txt
+
+# Localizar somente diretórios que comecem por algum trecho
+find ./teste -type d -name "exemplo*"
+# Resultado
+./teste/exemplo
+
+# Mostra o histórico de comandos
+history
+# Pegar os últimos 10 comandos
+history | tail
+
+
+echo "Este é um teste"
+# Resultado
+Este é um teste
+
+# Pode ser usado para colocar textos dentro de arquivos.
+echo "Este é mais um teste" > teste.txt
+cat teste.txt
+Este é mais um teste

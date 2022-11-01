@@ -1,0 +1,47 @@
+Histórico: O sistema UNIX foi desenvolvido na década de 60 na linguagem "S" e até hoje é base para maior parte dos sistemas. Operacionais, como, por exemplo, Linux e Macos. 
+
+Diferenciais do sistema UNIX: Suporte simultâneo multiusuários, multitarefas e portabilidade para os mais diversos sistemas operacionais.
+
+Elementos: 
+
+Kernel: Núcleo do sistema e faz o gerenciamento entre software e hardware. Sua principais funções são o gerenciamento de memória, processos e arquivos.
+
+Shell: Interface entre o núcleo do sistema, hardware e usuário. Sua função é ler o comando, interpretar, processar e desenvolver o resultado. Principais tipos de Shell:  SH. BASH, CSH TCSH e ZSH.
+
+Aplicativos: Softwares e a maioria dos comandos do UNIX.
+
+Processos x Arquivos
+
+Tudo que é feito no UNIX é identificado como processo. Nesse processo existem informações de identificação – PID, como, por exemplo, proprietários, sessão, linha de comando, etc.
+
+Tudo no sistema UNIX  é considerado arquivo ( arquivos, diretórios e dispositivos) e assim como os processos carregam uma série de informações e também uma hierarquia organizada em raiz (/) root.
+
+Principais comandos e operações: 
+Criar pasta: touch <nome_do_arquivo>.<tipo_do_arquivo>.
+Criar diretório: mkdir<nome_do_diretorio>
+Localizar arquivos e diretórios: ls 
+Mostrar todos os arquivos daquele diretório: ls*
+Ir para pastas: cd <nome_do_arquivo>
+Voltar para a tela anterior: cd ..
+Voltar para o início: cd
+Remover arquivo: rm <nome_do_arquivo>
+Remover diretório: rmdir <nome_do_diretorio>
+Exibir conteúdoda pasta: cat <nome_do_arquivo>
+Monstrar partes do conteúdo: 
+- less <nome_do_arquivo> **** Para finalizar a visualização tecla “q”
+- head <nome_do_arquivo> **** Por padrão trás os 10 primeiros valores.
+- tail <nome_do_arquivo>  **** Por padrão trás os 10 últimos valores.
+Buscar conteúdo específico: greap -i ‘conteúdo’ <nome_do_diretorio_ou_pasta>
+Buscar por exclusão de conteúdo: greap -in ‘conteúdo’ <nome_do_diretorio_ou_pasta>
+Contar linhas ou arquivos: wc
+Identificar local: pwd
+Inserir conteúdo na pasta: cat > <nome_da_pasta>
+Inserir conteúdo adicional na pasta >> <nome_da_pasta>
+Mover arquivo: mv <nome_da_pasta>
+Remover arquivo <nome_da_pasta>
+Remover diretório <nome_do_diretorio>
+Apagar diretórios e arquivos: rm – rf <nome_do_diretorio_ou_pasta>
+
+* Não lembra a função do comando: whatis (cp)
+**Não lembra o comando: apropos (name to do)
+***Manual do comando: man (name comand)

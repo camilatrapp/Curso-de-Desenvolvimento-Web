@@ -1,0 +1,44 @@
+Introdução à Internet
+
+Antes de abordar o estudo ao HTML é importante analisar quais são os elementos que montam a internet e tornam possível sua dinâmica. 
+
+Para tanto, em forma de conceitos, abaixo seguem todos os principais atores que figuram para o resultado final da internet, porém, antes de mais nada, o conceito da própria internet pode ser compreendido como uma rede global de computadores que permite o envio e troca de dados entre si, seguindo o mesmo protocolo.
+
+Vamos aos conceitos:
+
+Web: “É o conjunto dos serviços que usam a internet em seu funcionamento. A internet é a infraestrutura que permite o funcionamento da web.”
+
+Cliente: “O Cliente é uma aplicação que está conectada à internet, a sua principal função é receber a interação da pessoa usuária e traduzi-la em uma requisição para outro computador, também conectado à internet chamado Servidor. Apesar de estar usando o navegador para acessar à internet, você pode pensar no seu computador como sendo o Cliente no modelo Cliente-Servidor.”
+
+Servidor: “Um Servidor é um computador conectado à internet com capacidade de armazenamento e processamento acima da média, com objetivo de conectar outros computadores em uma rede. Sua tarefa se resume a esperar por requisições de outros computadores (Clientes), processar as requisições e fornecer os resultados desse processamento de volta para seus Clientes. Diferente do seu computador pessoal, um Servidor tem um software específico em execução que irá dizer como ele deve responder a uma requisição do seu navegador. Existem diversos tipos de servidores, como Web Servers, Database Servers, File Servers, Application Servers. O servidor que usamos para fazer a busca por www.google.com é um Web Server (Servidor Web).”
+
+Endereço IP: “A sigla IP refere-se a Internet Protocol. O endereço IP é um identificador numérico para um dispositivo (computador, celular, tablet, impressora, roteador, servidor…) conectado a uma rede TCP/IP. Todo dispositivo conectado à internet tem um endereço IP único que irá identificá-lo, e será usado para comunicar com outros dispositivos. Os endereços IP tem quatro campos de dígitos separados por pontos (exemplo: 244.155.65.2). Esses números são chamados de endereço lógico. Para localizar um dispositivo conectado à internet, o endereço lógico é convertido em um endereço físico por um software. Esse endereço físico faz parte do seu hardware e é conhecido por ser o endereço de controle de acesso à mídia (MAC address).”
+
+TCP/IP: “TCP/IP é o principal protocolo de envio e recebimento de dados na internet. TCP significa Transmission Control Protocol (Protocolo de Controle de Transmissão). Em suma, o TCP será responsável por definir como diferentes aplicativos se comunicam na rede e também como os dados enviados serão divididos em pacotes. E o IP, Internet Protocol (Protocolo de Internet), define como os dados divididos em pacotes devem ser enviados para chegar corretamente ao destinatário. O TCP/IP é a união dos protocolos TCP e IP, uma pilha de protocolos que é dividida em quatro camadas: aplicação, transporte, rede e interface. Cada uma dessas camadas tem uma responsabilidade específica, mas todas são conectadas entre si para garantir a segurança e a disponibilidade dos dados.”
+
+ISP: “ISP ou Internet Service Provider é o seu provedor de internet. É qualquer empresa que nos fornece acesso ao maravilhoso mundo Web. Sem os seus serviços, não conseguiríamos fazer a nossa busca por www.google.com, pois não estaríamos conectados à internet.”
+
+DNS: “DNS ou Domain Name System é um dispositivo com uma base de dados distribuída que gerencia os nomes de serviços, computadores ou qualquer dispositivo conectado à internet. Ele é usado para relacionar o endereço nominal (google.com) com o endereço IP (142.250.190.78). Os servidores DNS são responsáveis por localizar e traduzir para números (um endereço IP) as buscas por sites que digitamos no navegador.”
+
+Port Number: “O número de porta é um número de 16 bits utilizado para identificar uma porta específica no servidor, e está sempre associado ao endereço IP. O Port number é uma forma de identificar um processo específico encaminhado para o servidor.”
+
+Host: “O Host é qualquer dispositivo conectado à rede que pode transmitir ou receber pacotes IP, seja como cliente, seja como servidor ou qualquer outro tipo de modelo, sendo que cada host tem um endereço IP único. Dentre esses dispositivos temos computadores, tablets, smarts TV, smartphones, entre outros. Para o site que estamos buscando, www.google.com, o host é o servidor web que hospeda a página na web. É comum confundir o host com o servidor. Lembre-se de que são coisas diferentes! O Servidor é um tipo de host - uma máquina específica com endereço IP. Por outro lado, o host pode ser também uma organização inteira que fornece um serviço de hospedagem para manter inúmeros servidores web.”
+
+HTTP: “Hyper-text Transfer Protocol é o protocolo utilizado para a comunicação entre navegadores e servidores na internet. URL: É a sigla para Uniform Resource Locators e identifica um recurso web específico. Podemos, como exemplo, mudar a nossa busca para https://www.google.com/travel/flights para pesquisar por preços de passagens aéreas.“
+
+“O URL identifica o protocolo que será utilizado para nos comunicarmos com o servidor (https), o nome do host (google.com) e o recurso que queremos acessar (travel/flights).”
+
+O modelo Cliente-Servidor e a estrutura de uma aplicação web
+Depois de apresentados os atores principais da internet e compreendida a dinâmica da internet na comunicação e no processamento de dados, é hora de entender os bastidores de uma aplicação web e, assim, onde se aplicam o HTML e o CSS.
+Partindo do pressuposto que a aplicação web possui um estrutura composta por um cliente, um servidor e um banco de dados. A função dessa cadeia (Cliente-Servidor) é descrever como um cliente (um computador conectado à Web) e um servidor se comunicam na rede. 
+Dito isso, para isso se tornar possível, quando uma pessoa usuária digita uma URL e pressiona Enter, o servidor processa a solicitação e envia o arquivo HTML de volta ao cliente. 
+
+Aqui entra a figura do HTML, sigla para Hyper text markup language, pois a estruturação das páginas será definida por essa linguagem de marcação de texto. 
+
+Portanto, todos os arquivos HTML conterão as informações estruturais do site, links ou códigos necessários para exibir o site corretamente. 
+Já o CSS atuará na aparência da página , que significa Cascading Style Sheets, pois permite alterar a fonte, a cor, o tamanho e até mesmo incluir recursos como animações e áudio. Também é uma linguagem que permite descrever como os elementos definidos pelo HTML devem ser estilizados. 
+Por fim, as interações com a pessoa usuária são definidas por uma terceira linguagem: o JavaScript. É o JavaScript que confere à página um comportamento dinâmico.
+
+Resumo: 
+Quando acessamos a internet um processo acontece. 
+Depois inseridas informações no navegador - nomeado de cliente, conectado à internet , é enviada uma requisição ao servidor, que é também um computador com alta capacidade de armazenamento. A função do servidor, por sua vez, armazenar, processar e entregar a página web solicitada pelo cliente. 
